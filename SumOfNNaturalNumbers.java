@@ -11,6 +11,5 @@ public class SumOfNNaturalNumbers {
         System.out.println("enter number");
         int num = sc.nextInt();
         System.out.println("sum of n natural numbers: "+sumOfNNaturalNumbers(num));
-
     }
 }
