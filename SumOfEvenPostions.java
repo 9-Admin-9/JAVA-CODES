@@ -37,29 +37,31 @@ Constraints
 
  */
 
-import java.util.Scanner;
+ import java.util.Scanner;
 
-public class SumOfEvenPostions
- {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("enter size an array");
-        int size = scanner.nextInt();
-        int[] arr = new int[size];
-        for(int i=0;i<size;i++)
-        {
-            System.out.println("enter "+ (i+1) +" element in to an array");
-            arr[i]= scanner.nextInt();
-        }
-        int evenSum =0;
-        for(int i =0;i<size;i++)
-        {
-            int reversedIndex = size-i-1;
-            if(i%2==0)
-            {
-                evenSum+=arr[reversedIndex];
-            }
-        }
-        System.out.println("sum of all even elements: "+evenSum);
-    }
+ public class SumOfEvenPostions {
+     public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+ 
+         int size = scanner.nextInt();              // Read size
+         int[] arr = new int[size];                // Initialize array
+ 
+         for (int i = 0; i < size; i++) {
+             arr[i] = scanner.nextInt();           // Read each element
+         }
+ 
+         int evenSum = 0;
+ 
+         // Traverse as if array is reversed
+         for (int i = 0; i < size; i++) {
+             int reversedIndex = size - i - 1;
+             if (i % 2 == 0) {
+                 evenSum += arr[reversedIndex];    // Add elements at even indices in reversed array
+             }
+         }
+ 
+         System.out.println(evenSum);              // Output result
+         scanner.close();
+     }
  }
+ 
