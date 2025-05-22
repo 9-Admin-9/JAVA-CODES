@@ -4,8 +4,8 @@
 
 import java.util.Scanner;
 
-public class divisiors {
-    public static void divisiors(int n){
+public class Divisors {
+    public static void printDivisiors(int n){
         int i = 0;
         for(i=1;i*i<=n;i++){
             if(n%i==0){
@@ -24,6 +24,6 @@ public class divisiors {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter number");
         int num = sc.nextInt();
-        divisiors(num);
+        printDivisiors(num);
     }
 }
