@@ -275,7 +275,7 @@ public class patterns{
 1 2
 1 2 3 
 1 2 3 4 
-1 2 3 4
+1 2 3 4 5
 
 import java.util.Scanner;
 
@@ -536,11 +536,14 @@ public class patterns {
 
 20)
 
+    1 
+   1 2
+  1   3
+ 1     4
+1 2 3 4 5
 */
 
 import java.util.Scanner;
-
-import org.xml.sax.SAXException;
 
 public class patterns{
     public static void main(String[] args) {
@@ -563,3 +566,4 @@ public class patterns{
         }
     }
 }
+
